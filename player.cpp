@@ -219,7 +219,7 @@ void player::update(Input* input,float timeStep)
             //player_stand->SetWeight(1.0-Clamp(vel.Length()/2,0.0,1.0));
             as_stand->SetWeight(1.0);
             //player_walk->SetWeight(Clamp(vel.Length()/2,0.0,1.0));
-            as_run->SetWeight(Clamp((vel.Length()-2)/2,0.0,1.0));   // maybe this should be done differently, but works for this game
+            as_run->SetWeight(Clamp((vel.Length()-2)/2,0.0f,1.0f));   // maybe this should be done differently, but works for this game
             if(!on_floor)
                 as_jump->SetWeight(as_jump->GetWeight()+timeStep*5);
             else
@@ -382,11 +382,11 @@ text_->SetText(s);
     if(camera_yaw>=360)
         camera_yaw-=360;
     camera_pitch+=mouseMove.y_*0.1;
-    camera_pitch=Clamp(camera_pitch,-85.0,85.0);
+    camera_pitch=Clamp(camera_pitch,-85.0f,85.0f);
     if(!camera_first_person)
     {
         camera_distance-=input->GetMouseMoveWheel();
-        camera_distance=Clamp(camera_distance,2.0,50.0);
+        camera_distance=Clamp(camera_distance,2.0f,50.0f);
 
         node_camera->SetPosition(node->GetPosition());
         node_camera->SetDirection(Vector3::FORWARD);
