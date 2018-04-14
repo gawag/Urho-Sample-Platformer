@@ -271,7 +271,7 @@ void gs_main_menu::HandleKeyDown(StringHash eventType,VariantMap& eventData)
 {
     using namespace KeyDown;
     int key=eventData[P_KEY].GetInt();
-    if(key==KEY_ESC)
+    if(key== KEY_ESCAPE)
         globals::instance()->engine->Exit();
     else if(key==KEY_G)
         window_menu->SetVisible(!window_menu->IsVisible());

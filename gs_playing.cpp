@@ -454,7 +454,7 @@ void gs_playing::HandleKeyDown(StringHash eventType,VariantMap& eventData)
         return;
     using namespace KeyDown;
     int key=eventData[P_KEY].GetInt();
-    if(key==KEY_ESC)
+    if(key== KEY_ESCAPE)
         globals::instance()->game_states.emplace_back(new gs_pause);
 
     if(key==KEY_L)
