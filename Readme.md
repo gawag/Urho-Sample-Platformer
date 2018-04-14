@@ -3,7 +3,7 @@
 
 --
 14.4.2018 updated to trunk ( at this point: 218e4d7592cf8681001e795cac6672fb29fb156a ).
-Same source code, just updated CMake files, CoreData, some Data files.
+Fixed few things in source code, updated CMake files, CoreData, some Data files.
 
 Visual Studio 2017 info (should work other cmake_* too):
 
