@@ -1,5 +1,26 @@
 # Urho Sample Platformer
 
+
+--
+14.4.2018 updated to trunk ( at this point: 218e4d7592cf8681001e795cac6672fb29fb156a ).
+Same source code, just updated CMake files, CoreData, some Data files.
+
+Visual Studio 2017 info (should work other cmake_* too):
+
+Create solution like this
+
+ cmake_vs2017.bat Build -DURHO3D_HOME=your_urho3d_build_directory
+ 
+ie if you have F:/CPP/Urho3D/  (from trunk), and you created (cmake created) F:/CPP/Urho3D/Build/  dir where  lib/, include/ etc are, then use
+
+ cmake_vs2017.bat Build -DURHO3D_HOME=F:/CPP/Urho3D/Build
+
+Then open Build/Urho-Sample-Platformer.sln
+
+ 
+-m
+--
+
 This is the first Urho3D sample project developed for the Unofficial Urho wiki: http://urho3d.wikia.com/  
 The USP page there with Urho related details is at: http://urho3d.wikia.com/wiki/USP_-_Urho_Sample_Platformer  
 See the wiki here https://github.com/gawag/Urho-Sample-Platformer/wiki for more game related informations.
