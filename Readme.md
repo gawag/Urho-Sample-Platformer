@@ -5,7 +5,7 @@
 14.4.2018 updated to trunk ( at this point: 218e4d7592cf8681001e795cac6672fb29fb156a ).
 Fixed few things in source code, updated CMake files, CoreData, some Data files.
 
-Visual Studio 2017 info (should work other cmake_* too):
+Visual Studio 2017 info (should work other cmake_* too (but didnt test)):
 
 Create solution like this
 
@@ -17,9 +17,9 @@ ie if you have F:/CPP/Urho3D/  (from trunk), and you created (cmake created) F:/
 
 Then open Build/Urho-Sample-Platformer.sln
 
- 
 -m
 --
+
 
 This is the first Urho3D sample project developed for the Unofficial Urho wiki: http://urho3d.wikia.com/  
 The USP page there with Urho related details is at: http://urho3d.wikia.com/wiki/USP_-_Urho_Sample_Platformer  
