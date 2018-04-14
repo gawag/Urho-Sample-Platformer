@@ -20,6 +20,17 @@
 # THE SOFTWARE.
 #
 
-# VS generator is multi-config, we need to use the CMake generator expression to get the correct target linker filename during post build step
+# Find Generic Buffer Management development library
+#
+#  GBM_FOUND
+#  GBM_INCLUDE_DIRS
+#  GBM_LIBRARIES
+#
 
-configure_file (Urho3D.pc.msvc Urho3D.pc @ONLY)
+find_path (GBM_INCLUDE_DIRS NAMES gbm.h DOC "GenericBufferManagement include directory")
+find_library (GBM_LIBRARIES NAMES gbm DOC "GenericBufferManagement library")
+
+include (FindPackageHandleStandardArgs)
+find_package_handle_standard_args (GenericBufferManagement REQUIRED_VARS GBM_LIBRARIES GBM_INCLUDE_DIRS FAIL_MESSAGE "Could NOT find Direct Generic Buffer Management development library")
+
+mark_as_advanced (GBM_INCLUDE_DIRS GBM_LIBRARIES)

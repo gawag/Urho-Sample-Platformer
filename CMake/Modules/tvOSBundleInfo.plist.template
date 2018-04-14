@@ -30,14 +30,9 @@
     <true/>
     <key>LSRequiresIPhoneOS</key>
     <true/>
-    <key>UIStatusBarHidden</key>
-    <true/>
-    <key>UIRequiresFullScreen</key>
-    <true/>
-    <key>UISupportedInterfaceOrientations</key>
+    <key>UIRequiredDeviceCapabilities</key>
     <array>
-        <string>UIInterfaceOrientationLandscapeLeft</string>
-        <string>UIInterfaceOrientationLandscapeRight</string>
+        <string>arm64</string>
     </array>
     <key>NSHumanReadableCopyright</key>
     <string>${MACOSX_BUNDLE_COPYRIGHT}</string>
