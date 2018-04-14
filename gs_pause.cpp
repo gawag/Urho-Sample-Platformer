@@ -146,7 +146,7 @@ void gs_pause::HandleKeyDown(StringHash eventType,VariantMap& eventData)
 {
     using namespace KeyDown;
     int key=eventData[P_KEY].GetInt();
-    if(key==KEY_ESC)
+    if(key== KEY_ESCAPE)
     {
         GetSubsystem<Input>()->SetMouseVisible(false);
         GetSubsystem<Input>()->SetMouseGrabbed(true);
